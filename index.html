@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href= "https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="navbar" id="home">
+      <div class="title">
+        <p>Library System</p>
+
+      </div>
+
+      <div class="nav-items">
+        <a href="#books">Logout</a>
+        <a href="">Contact us</a>
+        <a href="#forms">Register</a>
+        <a href="">Books</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <!-- books table section -->
+      <section class="books-table">
+        <h1>Books</h1>
+        <table>
+            <thead>
+                <tr class="row">
+                    <th class="col">Book ID</th>
+                    <th class="col">Title</th>
+                    <th class="col">Author</th>
+                    <th class="col">Genre</th>
+                    <th class="col">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row">
+                    <td class="col">1</td>
+                    <td class="col">
+                        <a href="#">Book Title 1</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date:2000
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Page Count:250
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    ISBN:012-454685798
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">Author Name 1</td>
+                    <td class="col">Genre 1</td>
+                    <td class="col">Available</td>
+                </tr>
+                <tr class="row">
+
+
+                    <td class="col">2</td>
+                    <td class="col">
+                        <a href="#">Book Title 2</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date:2005
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Page Count:300
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    ISBN:012-454685123
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">Author Name 2</td>
+                    <td class="col">Genre 2</td>
+                    <td class="col">Not Available</td>
+                </tr>
+                <tr class="row">
+
+                    <td class="col">3</td>
+                    <td class="col">
+                        <a href="#">Book Title 3</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date:2010
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Page Count:350
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    ISBN:012-454685798
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">Author Name 3</td>
+                    <td class="col">Genre 3</td>
+                    <td class="col">Available</td>
+                </tr>
+                <tr class="row">
+                    <td class="col">4</td>
+                    <td class="col">
+                        <a href="#">Book Title 4</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date:2000
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Page Count:250
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    ISBN:012-454685798
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">Author Name 1</td>
+                    <td class="col">Genre 1</td>
+                    <td class="col">Available</td>
+                </tr>
+            </tbody>
+           
+           
+        </table>
+
+      </section>
+
+      <!-- form section -->
+      <section class="registeration-form " id="form">
+<h1>Register</h1>
+<form action="#" method="get">
+    <div class="form-control">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fName" id="fNmae" placeholder="Enter first name" required>
+    </div>
+    <div class="form-control">
+        <label for="lname">Last  Name:</label><br>
+        <input type="text" name="lName" id="fNmae"  placeholder="Enter Last name" required>
+    </div>
+    <div class="form-control">
+        <label for="dob">Date of birth:</label><br>
+        <input type="date" name="dob" id="dob"  required>
+    </div>
+    <div class="form-control">
+        <label for="Age">Age:</label><br>
+        <input type="text" name="Age" id="Age"  placeholder="Enter Age" min="5" max="100" required>
+    </div>
+    <div class="form-control">
+        <label for="email">email:</label><br>
+        <input type="email" name="email" id="email"  placeholder="Enter email" required>
+    </div>
+    <div class="form-control">
+        <label for="Password">Password:</label><br>
+        <input type="password" name="Password" id="Password"  placeholder="Enter Password"  pattern="/b/d{5}/b"  required>
+    </div>
+    <div class="form-control">
+        <label for="confirm-Password">Confirm Password:</label><br>
+        <input type="password" name="confirm-Password" id="confirm-Password" pattern="/b/d{5}/b"  required>
+    </div>
+    <div class="form-control">
+        <input type="submit" value="Register" class="submit-btn">
+    </div>
+
+
+</form>
+
+      </section>
+      <section class="top-btn">
+        <a href="#home"class="top-btn">
+        <img src="./image/upload.png" alt="top">
+      </section>
+    </main>
+  </body>
+</html>
